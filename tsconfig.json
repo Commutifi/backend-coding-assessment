@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["dom", "es5", "es6", "esnext.asynciterable"],
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "sourceRoot": "./src/",
+    "baseUrl": "src",
+    "paths": {
+      "app/*": ["app/*"],
+      "config/*": ["config/*"],
+      "interfaces/*": ["interfaces/*"],
+      "middleware/*": ["middleware/*"],
+      "migrations/*": ["migrations/*"],
+      "models/*": ["models/*"],
+      "services/*": ["services/*"],
+      "tests/*": ["tests/*"],
+      "types/*": ["types/*"],
+      "utils/*": ["utils/*"],
+      "src/*": ["./*"],
+      "root/*": ["../*"],
+      "bin/*": ["bin/*"],
+      "factories/*": ["factories/*"]
+    },
+    "outDir": "./dist/",
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strictPropertyInitialization": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["./node_modules/*", "./scripts/*", "test"]
+}
